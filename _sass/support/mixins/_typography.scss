@@ -40,6 +40,14 @@
   }
 }
 
+@mixin fs-6-1 {
+  font-size: 17px !important;
+
+  @include mq(sm) {
+    font-size: 22px !important;
+  }
+}
+
 @mixin fs-6 {
   font-size: 18px !important;
 
