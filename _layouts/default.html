@@ -7,7 +7,7 @@
   <div class="page-wrap">
     <div class="side-bar">
       <a href="{{ site.url }}{{ site.baseurl }}" class="site-title fs-6 lh-tight">{{ site.title }}</a>
-      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">菜单</button></span>
       <div class="navigation main-nav js-main-nav">
         {% include nav.html %}
       </div>
@@ -54,7 +54,7 @@
 
           {% if page.has_children == true and page.has_toc != false %}
           <hr>
-          <h2 class="text-delta">Table of contents</h2>
+          <h2 class="text-delta">章节目录</h2>
           {% assign children_list = site.pages | sort:"nav_order" %}
           <ul>
             {% for child in children_list %}
